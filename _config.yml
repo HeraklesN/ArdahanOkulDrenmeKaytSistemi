@@ -1,0 +1,77 @@
+# GitHub Pages Configuration for Ardahan Okul Dışı Öğrenme Kayıt Sistemi
+
+# Site settings
+title: "Ardahan Okul Dışı Öğrenme Kayıt Sistemi"
+description: "Modern Android uygulaması ile eğitim kayıtlarınızı kolayca yönetin"
+url: "https://yourusername.github.io/ArdahanOkulDrenmeKaytSistemi"
+baseurl: "/ArdahanOkulDrenmeKaytSistemi"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+
+# Include files
+include:
+  - _redirects
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "doc"
+
+# Social media
+twitter:
+  username: yourusername
+  card: summary_large_image
+
+# SEO
+seo:
+  type: "WebSite"
+  name: "Ardahan Okul Dışı Öğrenme Kayıt Sistemi"
+  description: "Modern Android uygulaması ile eğitim kayıtlarınızı kolayca yönetin"
+  url: "https://yourusername.github.io/ArdahanOkulDrenmeKaytSistemi"
+  image: "/assets/images/og-image.jpg"
+
+# Analytics (uncomment and add your tracking ID)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Comments (uncomment if using Disqus)
+# disqus:
+#   shortname: your-disqus-shortname
